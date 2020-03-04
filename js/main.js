@@ -36,38 +36,6 @@ var posCopy = ( hScreen - $('#pHome .banner-copy').outerHeight() )/2;
 
       };
 
-      this.faq = function  () {
-        $('.faq-ans').on('click', function() {
-
-          var h = $(this).find('.copy-faq').outerHeight();
-
-
-
-
-
-          $('.faq-ans').removeClass('display');
-          $('.faq-ans .h-copy').velocity({ height: 0 } , 500);
-
-          $(this).find('.h-copy').velocity({ height: h+'px' }, {
-            duration: 500,
-            complete: function() {
-              $(this).parent().addClass('display');
-              var top = parseInt($(this).offset().top -150);
-               $("html").velocity("scroll", { offset: top+'px', mobileHA: false },{
-                  duration: 1500,
-                  easing: "easeOutExpo"
-                });
-            }
-          });
-
-
-
-
-        });
-
-        //$('.faq-contain .faq-ans:eq(0)').trigger('click');
-      }
-
       this.subMenuHandle = function () {
 
         $(menu).mouseenter(function(event) {
@@ -146,13 +114,6 @@ var posCopy = ( hScreen - $('#pHome .banner-copy').outerHeight() )/2;
 
       };
 
-      this.scrollInit = function () {
-        if( $('#pBrand').length ) {
-          $('.store-scroll').tinyscrollbar();
-        }
-
-      }
-
       this.showBoxSearch = function () {
         $('.js-btn-search').on('click', function() {
           $('.wrap-box--search').show();
@@ -178,55 +139,11 @@ var posCopy = ( hScreen - $('#pHome .banner-copy').outerHeight() )/2;
         });
       };
 
-      this.onClickUploadFile = function () {
-
-        $('.js-upload-file').on('click', function(event) {
-           $(this).next().trigger('click');
-        });
-
-      };
-
-      this.subMenuMobileHandle = function  () {
-
-        $(menu).on('click', function() {
-          if($(this).hasClass('hover')) {
-            if (isMenu) return;
-            isMenu = true;
-
-            $(this).find('.submenu').velocity({
-              height: 500 } , {
-              duration: 150,
-              display: 'block',
-              complete: function() {
-                $('.submenu .links a').velocity('stop').velocity({
-                  opacity: 1
-                });
-                isMenu = false;
-              }
-            });
-          }
-
-        });
-
-
-
-      }
-
-
-
 
       this.init = function () {
-
         _this.styleHeader();
-
-        if(getDocumentSize(0)>1200) {
-          _this.subMenuHandle();
-        }
         _this.showBoxSearch();
-        _this.onClickUploadFile();
-        _this.scrollInit();
         _this.languageHandle();
-        _this.faq();
         return this;
       };
 

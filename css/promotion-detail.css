@@ -1,0 +1,367 @@
+
+.banner-detail {
+    height: 450px;
+    overflow: hidden
+}
+
+.banner-detail>img {
+    width: 100%;
+    display: block
+}
+
+.btn-back {
+    font-family: "Didot";
+    font-size: 2.3333333333rem;
+    line-height: 1;
+    color: #000;
+    text-decoration: none;
+    font-style: italic
+}
+
+.btn-back span {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+    display: inline-block;
+    background: url(../images/ar-l-b.png) no-repeat center top;
+    background-size: cover
+}
+
+.btn-back:hover {
+    color: #6fcbf0
+}
+
+.btn-back:hover span {
+    background: url(../images/ar-l-hv.png) no-repeat center top;
+    background-size: cover
+}
+
+.contain-detail {
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0 0;
+    clear: both;
+    overflow: hidden
+}
+
+.contain-detail .copy {
+    width: 65%;
+    float: left;
+    position: relative;
+    padding-bottom: 50px
+}
+
+.contain-detail .copy .day {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 2rem;
+    font-family: "Didot"
+}
+
+.contain-detail .copy .day strong {
+    text-transform: uppercase;
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 1px solid #a3a3a3
+}
+
+
+
+.contain-detail .copy h1 {
+    font-family: 'avertabold';
+    font-size: 3rem;
+    padding: 50px 0 30px
+}
+
+.contain-detail .copy .by {
+    font-family: "Didot";
+    padding-bottom: 50px;
+    font-size: 2rem;
+    clear: both;
+    overflow: hidden
+}
+
+.contain-detail .copy .btn-share {
+    color: #000;
+    float: right;
+    text-decoration: none
+}
+
+.contain-detail .copy .btn-share span {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    display: inline-block;
+    background: url(../images/share.png) no-repeat center top;
+    background-size: cover;
+    margin-top: 5px
+}
+
+.contain-detail .copy .btn-share:hover {
+    color: #6fcbf0
+}
+
+.contain-detail .copy .btn-share:hover span {
+    background: url(../images/share-hv.png) no-repeat center top;
+    background-size: cover
+}
+
+.contain-detail .copy p {
+    font-size: 15px;
+    padding-bottom: 25px
+}
+
+.contain-detail .latest-posts {
+    width: 30%;
+    float: right
+}
+
+.contain-detail .latest-posts h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-bottom: 30px
+}
+
+.contain-detail .copy .btn-back {
+    font-size: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 5px
+}
+
+.contain-detail .copy .btn-back span {
+    vertical-align: middle;
+    margin-top: -5px
+}
+
+.bodytext h1,
+.bodytext h2,
+.bodytext h3,
+.bodytext h4,
+.bodytext h5,
+.bodytext h6 {
+    padding-bottom: 20px
+}
+
+.bodytext h2 {
+    background: 0;
+    text-align: left;
+    padding-top: 0;
+    position: relative
+}
+
+.bodytext ol {
+    padding: 0
+}
+
+.bodytext ol li {
+    padding-bottom: 20px
+}
+
+.bodytext a {
+    display: inline;
+    color: #6fcbf0;
+    text-decoration: underline
+}
+
+.bodytext a:hover {
+    text-decoration: none
+}
+
+.post {
+    margin-bottom: 20px
+}
+
+.post .thumb {
+    margin-bottom: 20px;
+    border: 1px solid #eaeaea
+}
+
+.post .thumb img {
+    width: 100%;
+    display: block
+}
+
+.post h6 a {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    font-family: 'avertabold';
+    letter-spacing: 2px
+}
+
+.post h6 a:hover {
+    color: #6fcbf0
+}
+
+
+@media screen and (max-width:1200px) {
+    .banner-detail {
+        height: auto
+    }
+
+    .contain-detail .copy .btn-back,
+    .contain-detail .copy .btn-share {
+        font-size: 1.6666666667rem;
+        line-height: 35px
+    }
+    .contain-detail .copy h1 {
+        font-size: 2.6666666667rem;
+        line-height: 1.2;
+        text-transform: uppercase
+    }
+    .contain-detail .copy .by {
+        font-size: 1.6666666667rem
+    }
+    .contain-detail .copy .btn-share span {
+        margin-top: 0
+    }
+    .contain-detail .copy p img {
+        width: auto!important;
+        height: auto!important
+    }
+    .contain-detail .copy .day {
+        font-size: 1.3333333333rem;
+        padding-top: 5px
+    }
+    .contain-detail .copy p img {
+        max-width: 100%
+    }
+
+    .post h6 a {
+        font-size: 1.0666666667rem
+    }
+    .post .thumb a {
+        display: block
+    }
+
+    .contain-detail {
+        width: 96%
+    }
+    
+}
+
+@media screen and (max-width:769px) {
+    .banner-detail>img {
+        width: 130%;
+        margin-left: -15%
+    }
+
+    .contain-detail .copy .day {
+        font-size: 1.0666666667rem
+    }
+}
+
+@media screen and (max-width:736px) {
+    .banner-detail>img {
+        object-fit: cover;
+        height: 100%
+    }
+
+    .contain-detail .copy .btn-back {
+        display: block;
+        margin-bottom: 10px
+    }
+
+    .post .thumb a {
+        display: block
+    }
+    .post h6 a {
+        font-size: 1rem
+    }
+
+    .contain-detail .copy h1 {
+        padding-top: 20px
+    }
+    
+    .contain-detail .copy .day {
+        width: 100%;
+        position: relative;
+        top: 0;
+        right: auto;
+        left: 0
+    }
+    .contain-detail .copy h1 {
+        font-size: 2rem
+    }
+}
+
+@media screen and (max-width:569px) {
+    .contain-detail .copy .btn-back {
+        margin-left: 5%
+    }
+
+    .contain-detail .latest-posts {
+        width: 90%;
+        float: none;
+        margin: 0 auto
+    }
+    .contain-detail .latest-posts h4 {
+        font-family: "avertablack";
+        border-bottom: 1px solid #b6b6b6;
+        border-top: 1px solid #b6b6b6;
+        padding: 10px;
+        margin: 0 -5% 20px;
+        letter-spacing: 3px
+    }
+    .post .thumb {
+        margin-bottom: 10px
+    }
+
+    .contain-detail {
+        width: 100%
+    }
+    .contain-detail .copy {
+        width: 100%;
+        float: none;
+        padding: 0 5% 20px
+    }
+    
+    .contain-detail .copy .day {
+        left: 5%;
+        top: 0
+    }
+    .contain-detail .copy h1 {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.6666666667rem;
+        padding: 10px 0
+    }
+    .contain-detail .copy .by {
+        width: 90%;
+        margin: 0 auto
+    }
+    .contain-detail .copy .by>span {
+        padding-bottom: 10px;
+        display: inline-block
+    }
+    .contain-detail .copy .btn-share {
+        width: 100%;
+        float: none;
+        border-top: 1px solid #cecece;
+        border-bottom: 1px solid #cecece;
+        display: block;
+        text-align: right
+    }
+    .contain-detail .copy .btn-share span {
+        margin-top: 0
+    }
+    .contain-detail .copy .by>span {
+        font-size: 15px
+    }
+    .contain-detail .copy .btn-share {
+        padding: 5px 0
+    }
+    .contain-detail .copy .btn-share span {
+        vertical-align: middle
+    }
+}
+
+
+@media screen and (max-width:320px) {
+    .contain-detail {
+        padding-top: 30px
+    }
+}

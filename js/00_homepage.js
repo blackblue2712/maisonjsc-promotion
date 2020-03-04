@@ -73,27 +73,6 @@ var
               });
           });
         }
-        // if ($.cookie('noPreloader')) {
-        //   $('.pre-loading').hide();
-        //   $(window).load(function() {
-        //      MAISON.Homepage.intro();
-        //   });
-        // }
-        // else {
-        //   $(window).load(function() {
-        //       $('.loading').addClass('hide-loading');
-        //       $('.loading').delay(1200).velocity({ opacity: 0}, 300, function() {
-        //          $(this).hide();
-        //          $('.pre-loading').velocity({ height: 0}, 300, function() {
-        //             MAISON.Homepage.intro();
-        //          })
-        //       });
-        //   });
-
-        //   // and now we create 1 year cookie
-        //   $.cookie('noPreloader', true, {path: '/', expire: 365});
-        // }
-
       };
 
 
@@ -185,22 +164,7 @@ var
               $('header').css({ 'height' : '100%'});
             }
          });
-
-         // $(window).bind('load resize', function () {
-         //    if(getDocumentSize(0)> 1200) {
-         //      $('.ovl-mobile').hide();
-         //      $('header').css({ 'height' : 'auto'});
-         //    } else {
-         //      $('.ovl-mobile').show();
-         //      $('header').css({ 'height' : '100%'});
-         //    }
-         // });
-
         $('.ar-mobile').on('click', function() {
-
-          //$('.submenu').removeClass('show-sub');
-          //$('.ar-mobile').removeClass('drop')
-
           $(this).toggleClass('drop');
           $(this).next().toggleClass('show-sub');
 
